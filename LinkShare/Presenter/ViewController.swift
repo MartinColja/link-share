@@ -17,7 +17,6 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         loginButton.layer.cornerRadius = loginButton.frame.height * K.cornerRadius
         registerButton.layer.cornerRadius = registerButton.frame.height * K.cornerRadius
-        print("have to test something")
     }
     
     override func viewWillAppear(_ animated: Bool) {
