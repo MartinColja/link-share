@@ -11,4 +11,11 @@ import UIKit
 
 struct K {
     static let cornerRadius: CGFloat = 0.25
+    
+    struct Storyboard {
+        static let feedController = "FeedViewController"
+        static let createPostController = "CreatePostViewController"
+        static let messagesController = "MessagesViewController"
+        static let storyBoard = "Main"
+    }
 }
