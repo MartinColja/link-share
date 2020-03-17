@@ -10,41 +10,29 @@ import UIKit
 
 class MainViewController: UIViewController {
     
-    var feedViewController: FeedViewController?
-    var createPostViewController: CreatePostViewController?
-    var messagesViewController: MessagesViewController?
-    var activeController: UIViewController?
+    
+    var mainViewRouter = MainViewRouter()
     
     @IBOutlet weak var childViewController: UIView!
     
-    @IBAction func feedButtonPressed(_ sender: UIButton) {
-        if activeController != feedViewController{
-            removeActiveViewController()
-            pushViewController(viewController: feedViewController!)
-        }
-        
+    @IBOutlet weak var mainScreenToolbar: UIToolbar!
+    
+    
+    @IBAction func feedButtonPressed(_ sender: UIBarButtonItem) {
+        self.mainViewRouter.attach(controller: .feedViewController, to: self.childViewController, on: self)
     }
     
-    @IBAction func createPostButtonPressed(_ sender: UIButton) {
-        if activeController != createPostViewController {
-             removeActiveViewController()
-             pushViewController(viewController: createPostViewController!)
-        }
+    @IBAction func createPostButtonPressed(_ sender: UIBarButtonItem) {
+        mainViewRouter.attach(controller: .cretePostViewController, to: childViewController, on: self)
     }
     
-    @IBAction func messagesButtonPressed(_ sender: UIButton) {
-        if activeController != messagesViewController {
-            removeActiveViewController()
-            pushViewController(viewController: messagesViewController!)
-        }
+    @IBAction func messagesButtonPressed(_ sender: UIBarButtonItem) {
+        mainViewRouter.attach(controller: .messagesViewController, to: childViewController, on: self)
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setViewControllers()
-        removeActiveViewController()
-        pushViewController(viewController: feedViewController!)
-        // Do any additional setup after loading the view.
+        self.mainViewRouter.attach(controller: .feedViewController, to: self.childViewController, on: self)
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -54,32 +42,5 @@ class MainViewController: UIViewController {
     override func viewWillDisappear(_ animated: Bool) {
         navigationController?.isNavigationBarHidden = false
     }
-    
-    func setViewControllers() {
-        let storyboard = UIStoryboard(name: K.Storyboard.storyBoard, bundle: nil)
-        self.feedViewController =
-            (storyboard.instantiateViewController(withIdentifier: K.Storyboard.feedController) as! FeedViewController)
-        self.createPostViewController = (storyboard.instantiateViewController(withIdentifier: K.Storyboard.createPostController) as! CreatePostViewController)
-        self.messagesViewController =  (storyboard.instantiateViewController(withIdentifier: K.Storyboard.messagesController) as! MessagesViewController)
-    }
-    
-    func pushViewController(viewController: UIViewController) {
-        viewController.view.frame = childViewController.frame
-        addChild(viewController)
-        childViewController.addSubview(viewController.view)
-        viewController.didMove(toParent: self)
-        activeController = viewController
-    
-    }
-    
-    func removeActiveViewController() {
-        activeController?.willMove(toParent: nil)
-        activeController?.view.removeFromSuperview()
-        activeController?.removeFromParent()
-    }
-    
-
-    
-    
 
 }
