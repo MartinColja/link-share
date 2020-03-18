@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Firebase
 
 class ViewController: UIViewController {
 
@@ -17,6 +18,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         loginButton.layer.cornerRadius = loginButton.frame.height * K.cornerRadius
         registerButton.layer.cornerRadius = registerButton.frame.height * K.cornerRadius
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {

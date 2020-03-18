@@ -3,10 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8108F55624214AF800214D0C /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8108F55524214AF800214D0C /* Extensions.swift */; };
+		8108F55824214D8300214D0C /* RegisterInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8108F55724214D8300214D0C /* RegisterInteractor.swift */; };
+		8108F55C2421AEB400214D0C /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8108F55B2421AEB400214D0C /* LoginInteractor.swift */; };
 		810A11E4241FF46F00D150BE /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A11E3241FF46F00D150BE /* MainViewController.swift */; };
 		810A11E624201F7E00D150BE /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A11E524201F7E00D150BE /* FeedViewController.swift */; };
 		810A11E82420206600D150BE /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A11E72420206600D150BE /* CreatePostViewController.swift */; };
@@ -28,6 +31,9 @@
 /* Begin PBXFileReference section */
 		681AFB4B7B3CED2CCEB348DD /* Pods-LinkShare.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkShare.debug.xcconfig"; path = "Target Support Files/Pods-LinkShare/Pods-LinkShare.debug.xcconfig"; sourceTree = "<group>"; };
 		76E1F981408AEFC8E13AA318 /* Pods-LinkShare.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LinkShare.release.xcconfig"; path = "Target Support Files/Pods-LinkShare/Pods-LinkShare.release.xcconfig"; sourceTree = "<group>"; };
+		8108F55524214AF800214D0C /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		8108F55724214D8300214D0C /* RegisterInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterInteractor.swift; sourceTree = "<group>"; };
+		8108F55B2421AEB400214D0C /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
 		810A11E3241FF46F00D150BE /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		810A11E524201F7E00D150BE /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		810A11E72420206600D150BE /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
@@ -101,6 +107,7 @@
 				81398EA52421281100B97527 /* GoogleService-Info.plist */,
 				8192451B241FCD2900669083 /* Assets.xcassets */,
 				81924528241FE45400669083 /* Constants.swift */,
+				8108F55524214AF800214D0C /* Extensions.swift */,
 			);
 			path = LinkShare;
 			sourceTree = "<group>";
@@ -116,6 +123,8 @@
 		8192451E241FD43E00669083 /* Interactor */ = {
 			isa = PBXGroup;
 			children = (
+				8108F55724214D8300214D0C /* RegisterInteractor.swift */,
+				8108F55B2421AEB400214D0C /* LoginInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -275,6 +284,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				810A11EA242020B700D150BE /* MessagesViewController.swift in Sources */,
+				8108F55824214D8300214D0C /* RegisterInteractor.swift in Sources */,
+				8108F55C2421AEB400214D0C /* LoginInteractor.swift in Sources */,
 				81D07D3A24210D6C00B8AB8A /* MainViewRouter.swift in Sources */,
 				810A11E4241FF46F00D150BE /* MainViewController.swift in Sources */,
 				8192450A241FC78500669083 /* ViewController.swift in Sources */,
@@ -282,6 +293,7 @@
 				81924508241FC78500669083 /* SceneDelegate.swift in Sources */,
 				8192452D241FE6E000669083 /* RegisterViewController.swift in Sources */,
 				8192452B241FE6BD00669083 /* LoginViewController.swift in Sources */,
+				8108F55624214AF800214D0C /* Extensions.swift in Sources */,
 				810A11E624201F7E00D150BE /* FeedViewController.swift in Sources */,
 				810A11E82420206600D150BE /* CreatePostViewController.swift in Sources */,
 				81924529241FE45400669083 /* Constants.swift in Sources */,

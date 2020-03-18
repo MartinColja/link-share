@@ -18,18 +18,6 @@ class MainViewController: UIViewController {
     @IBOutlet weak var mainScreenToolbar: UIToolbar!
     
     
-    @IBAction func feedButtonPressed(_ sender: UIBarButtonItem) {
-        self.mainViewRouter.attach(controller: .feedViewController, to: self.childViewController, on: self)
-    }
-    
-    @IBAction func createPostButtonPressed(_ sender: UIBarButtonItem) {
-        mainViewRouter.attach(controller: .cretePostViewController, to: childViewController, on: self)
-    }
-    
-    @IBAction func messagesButtonPressed(_ sender: UIBarButtonItem) {
-        mainViewRouter.attach(controller: .messagesViewController, to: childViewController, on: self)
-    }
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.mainViewRouter.attach(controller: .feedViewController, to: self.childViewController, on: self)
@@ -41,6 +29,18 @@ class MainViewController: UIViewController {
     
     override func viewWillDisappear(_ animated: Bool) {
         navigationController?.isNavigationBarHidden = false
+    }
+    
+    @IBAction func feedButtonPressed(_ sender: UIBarButtonItem) {
+        self.mainViewRouter.attach(controller: .feedViewController, to: self.childViewController, on: self)
+    }
+    
+    @IBAction func createPostButtonPressed(_ sender: UIBarButtonItem) {
+        mainViewRouter.attach(controller: .cretePostViewController, to: childViewController, on: self)
+    }
+    
+    @IBAction func messagesButtonPressed(_ sender: UIBarButtonItem) {
+        mainViewRouter.attach(controller: .messagesViewController, to: childViewController, on: self)
     }
 
 }
