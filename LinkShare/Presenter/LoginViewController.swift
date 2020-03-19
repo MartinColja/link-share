@@ -8,6 +8,7 @@
 
 import UIKit
 import Firebase
+import SVProgressHUD
 
 class LoginViewController: UIViewController {
     
@@ -24,6 +25,7 @@ class LoginViewController: UIViewController {
     }
     
     @IBAction func loginButtonPressed(_ sender: UIButton) {
+        SVProgressHUD.show()
         let email = emailTextField.text!
         let password = passwordTextField.text!
         loginInteractor.loginUser(email, password)
@@ -45,10 +47,12 @@ class LoginViewController: UIViewController {
 import Firebase
 extension LoginViewController: LoginInteractorDelegate {
     func loginInteractor(didFailWithError error: Error, _ loginInteractor: LoginInteractor) {
+        SVProgressHUD.dismiss()
         self.presentSimpleAlert("Alert", error.localizedDescription, "Ok")
     }
     
     func loginInteractor(didLoginUser user: User, _ loginInteractor: LoginInteractor) {
+        SVProgressHUD.dismiss()
         self.performSegue(withIdentifier: K.Storyboard.loginSegue, sender: self)
     }
 }

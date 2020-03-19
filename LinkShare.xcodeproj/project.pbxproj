@@ -14,13 +14,19 @@
 		810A11E624201F7E00D150BE /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A11E524201F7E00D150BE /* FeedViewController.swift */; };
 		810A11E82420206600D150BE /* CreatePostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A11E72420206600D150BE /* CreatePostViewController.swift */; };
 		810A11EA242020B700D150BE /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 810A11E9242020B700D150BE /* MessagesViewController.swift */; };
+		812C04F72422C7D80014505B /* PostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 812C04F62422C7D80014505B /* PostViewController.swift */; };
+		812C04F92422D79E0014505B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 812C04F82422D79E0014505B /* Main.storyboard */; };
 		81398EA62421281100B97527 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 81398EA52421281100B97527 /* GoogleService-Info.plist */; };
+		8188BCD82422477400CEFC58 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8188BCD72422477400CEFC58 /* Post.swift */; };
+		8188BCDA2422481F00CEFC58 /* MainViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8188BCD92422481F00CEFC58 /* MainViewInteractor.swift */; };
+		8188BCDC2422898D00CEFC58 /* FeedViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8188BCDB2422898D00CEFC58 /* FeedViewInteractor.swift */; };
+		8188BCDF24228C8A00CEFC58 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8188BCDD24228C8900CEFC58 /* PostTableViewCell.swift */; };
+		8188BCE024228C8A00CEFC58 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8188BCDE24228C8900CEFC58 /* PostTableViewCell.xib */; };
 		81924506241FC78500669083 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81924505241FC78500669083 /* AppDelegate.swift */; };
 		81924508241FC78500669083 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81924507241FC78500669083 /* SceneDelegate.swift */; };
 		8192450A241FC78500669083 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81924509241FC78500669083 /* ViewController.swift */; };
 		81924512241FC78D00669083 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81924510241FC78D00669083 /* LaunchScreen.storyboard */; };
 		8192451C241FCD2900669083 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8192451B241FCD2900669083 /* Assets.xcassets */; };
-		81924527241FE3AC00669083 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 81924526241FE3AC00669083 /* Main.storyboard */; };
 		81924529241FE45400669083 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 81924528241FE45400669083 /* Constants.swift */; };
 		8192452B241FE6BD00669083 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8192452A241FE6BD00669083 /* LoginViewController.swift */; };
 		8192452D241FE6E000669083 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8192452C241FE6E000669083 /* RegisterViewController.swift */; };
@@ -38,7 +44,14 @@
 		810A11E524201F7E00D150BE /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
 		810A11E72420206600D150BE /* CreatePostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostViewController.swift; sourceTree = "<group>"; };
 		810A11E9242020B700D150BE /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		812C04F62422C7D80014505B /* PostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewController.swift; sourceTree = "<group>"; };
+		812C04F82422D79E0014505B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		81398EA52421281100B97527 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8188BCD72422477400CEFC58 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		8188BCD92422481F00CEFC58 /* MainViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewInteractor.swift; sourceTree = "<group>"; };
+		8188BCDB2422898D00CEFC58 /* FeedViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewInteractor.swift; sourceTree = "<group>"; };
+		8188BCDD24228C8900CEFC58 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		8188BCDE24228C8900CEFC58 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
 		81924502241FC78500669083 /* LinkShare.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LinkShare.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		81924505241FC78500669083 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		81924507241FC78500669083 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +59,6 @@
 		81924511241FC78D00669083 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		81924513241FC78D00669083 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8192451B241FCD2900669083 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		81924526241FE3AC00669083 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		81924528241FE45400669083 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		8192452A241FE6BD00669083 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8192452C241FE6E000669083 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
@@ -115,7 +127,9 @@
 		8192451D241FD42E00669083 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				81924526241FE3AC00669083 /* Main.storyboard */,
+				812C04F82422D79E0014505B /* Main.storyboard */,
+				8188BCDE24228C8900CEFC58 /* PostTableViewCell.xib */,
+				8188BCDD24228C8900CEFC58 /* PostTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -125,6 +139,8 @@
 			children = (
 				8108F55724214D8300214D0C /* RegisterInteractor.swift */,
 				8108F55B2421AEB400214D0C /* LoginInteractor.swift */,
+				8188BCD92422481F00CEFC58 /* MainViewInteractor.swift */,
+				8188BCDB2422898D00CEFC58 /* FeedViewInteractor.swift */,
 			);
 			path = Interactor;
 			sourceTree = "<group>";
@@ -139,6 +155,7 @@
 				810A11E524201F7E00D150BE /* FeedViewController.swift */,
 				810A11E72420206600D150BE /* CreatePostViewController.swift */,
 				810A11E9242020B700D150BE /* MessagesViewController.swift */,
+				812C04F62422C7D80014505B /* PostViewController.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
@@ -146,6 +163,7 @@
 		81924520241FD45800669083 /* Entity */ = {
 			isa = PBXGroup;
 			children = (
+				8188BCD72422477400CEFC58 /* Post.swift */,
 			);
 			path = Entity;
 			sourceTree = "<group>";
@@ -227,10 +245,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				81924527241FE3AC00669083 /* Main.storyboard in Resources */,
+				8188BCE024228C8A00CEFC58 /* PostTableViewCell.xib in Resources */,
 				81398EA62421281100B97527 /* GoogleService-Info.plist in Resources */,
 				81924512241FC78D00669083 /* LaunchScreen.storyboard in Resources */,
 				8192451C241FCD2900669083 /* Assets.xcassets in Resources */,
+				812C04F92422D79E0014505B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -284,6 +303,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				810A11EA242020B700D150BE /* MessagesViewController.swift in Sources */,
+				8188BCDC2422898D00CEFC58 /* FeedViewInteractor.swift in Sources */,
 				8108F55824214D8300214D0C /* RegisterInteractor.swift in Sources */,
 				8108F55C2421AEB400214D0C /* LoginInteractor.swift in Sources */,
 				81D07D3A24210D6C00B8AB8A /* MainViewRouter.swift in Sources */,
@@ -292,11 +312,15 @@
 				81924506241FC78500669083 /* AppDelegate.swift in Sources */,
 				81924508241FC78500669083 /* SceneDelegate.swift in Sources */,
 				8192452D241FE6E000669083 /* RegisterViewController.swift in Sources */,
+				8188BCD82422477400CEFC58 /* Post.swift in Sources */,
 				8192452B241FE6BD00669083 /* LoginViewController.swift in Sources */,
+				812C04F72422C7D80014505B /* PostViewController.swift in Sources */,
 				8108F55624214AF800214D0C /* Extensions.swift in Sources */,
 				810A11E624201F7E00D150BE /* FeedViewController.swift in Sources */,
 				810A11E82420206600D150BE /* CreatePostViewController.swift in Sources */,
+				8188BCDA2422481F00CEFC58 /* MainViewInteractor.swift in Sources */,
 				81924529241FE45400669083 /* Constants.swift in Sources */,
+				8188BCDF24228C8A00CEFC58 /* PostTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

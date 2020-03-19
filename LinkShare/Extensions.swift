@@ -13,7 +13,7 @@ extension UIViewController {
     
     func presentSimpleAlert(_ title: String, _ message: String, _ buttonText: String) {
         let alertController = UIAlertController(title: title, message: message, preferredStyle: .alert)
-        let action = UIAlertAction(title: buttonText, style: .destructive, handler: nil)
+        let action = UIAlertAction(title: buttonText, style: .cancel, handler: nil)
         alertController.addAction(action)
         self.present(alertController, animated: true, completion: nil)
     }

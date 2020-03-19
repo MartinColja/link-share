@@ -6,6 +6,7 @@ target 'LinkShare' do
   use_frameworks!
   pod 'Firebase/Auth'
   pod 'Firebase/Firestore'
+  pod 'SVProgressHUD'
   # Pods for LinkShare
 
 end
