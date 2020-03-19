@@ -129,7 +129,6 @@
 			children = (
 				812C04F82422D79E0014505B /* Main.storyboard */,
 				8188BCDE24228C8900CEFC58 /* PostTableViewCell.xib */,
-				8188BCDD24228C8900CEFC58 /* PostTableViewCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -156,6 +155,7 @@
 				810A11E72420206600D150BE /* CreatePostViewController.swift */,
 				810A11E9242020B700D150BE /* MessagesViewController.swift */,
 				812C04F62422C7D80014505B /* PostViewController.swift */,
+				8188BCDD24228C8900CEFC58 /* PostTableViewCell.swift */,
 			);
 			path = Presenter;
 			sourceTree = "<group>";
